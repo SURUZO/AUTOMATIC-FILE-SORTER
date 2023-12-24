@@ -3,6 +3,14 @@ Organize your messy directories effortlessly with this automatic file sorter wri
 
 How it Works
 
+DOWNLOAD THE AUTOSORTER.EXE    https://github.com/SURUZO/AUTOMATIC-FILE-SORTER/blob/main/AutoSorter.exe
+
+PASTE IT IN THE DIRECTORY TO SORT 
+
+DOUBLE CLICK TO SORT THE FILES
+
+        OR IF U WANT MORE FILE SUPPORTS U CAN DOWNLOAD THE CODE AND EDIT IT
+
 
 INSTALL PYTHON3 :https://www.python.org/downloads/
 
