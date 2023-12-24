@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 
 def organize_files():
     file_types = {
@@ -40,11 +41,12 @@ def organize_files():
         'Other': [],  # Generic category for unknown or miscellaneous files
     }
 
-    script_directory = os.path.dirname(os.path.realpath(__file__))
+    script_directory = os.path.dirname(os.path.abspath(sys.argv[0])) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
+    exe_name = 'AutoSorter.exe' if getattr(sys, 'frozen', False) else 'AutoSorter.py'
 
     for file in os.listdir(script_directory):
-        if file == os.path.basename(__file__) or file.startswith('.'):
-            continue  # Ignore the script file and hidden files
+        if file == exe_name:
+            continue
 
         file_path = os.path.join(script_directory, file)
         if os.path.isfile(file_path):
